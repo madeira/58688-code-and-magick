@@ -61,7 +61,7 @@ window.renderStatistics = function (ctx, names, times) {
     renderText(ctx, names[j], FONT, '#000', COLUMN_X + j * COLUMN_GAP, COLUMN_Y + COLUMN_HEIGHT + COLUMN_NAME_GAP);
     renderText(ctx, Math.round(times[j]), FONT, '#000', COLUMN_X + j * COLUMN_GAP, columnY - COLUMN_COUNT_GAP);
 
-    if (names[j] == 'Вы') {
+    if (names[j] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
       ctx.fillStyle = getRandomColor();
